@@ -1,0 +1,90 @@
+:root{
+    --color-accent: oklch(65% 50% 0);
+}
+
+body{
+    max-width: 100ch;
+    margin: auto;
+    margin-inline: auto;
+    padding: 10px;
+}
+nav{
+    display: contents;
+    display: flex;
+    margin-bottom: 10px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: oklch(80% 3% 200);
+}
+
+a{
+    flex: 1;
+    font-size: medium;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    padding: 5px;
+    
+}
+a.current{
+    border-bottom-width: 0.4em;
+    border-bottom-style: solid;
+    border-bottom-color: oklch(80% 3% 200);
+    padding-bottom: 5px;
+}
+a:hover{
+    border-bottom-width: 0.4em;
+    border-bottom-style: solid;
+    border-bottom-color: var(--color-accent);
+}
+form {
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    gap: 1em; 
+}
+
+label {
+    display: grid; 
+    grid-template-columns: subgrid; 
+    grid-column: 1; 
+}
+
+input, textarea {
+    grid-column: 2; 
+}
+
+button {
+    grid-column: 1 / -1; 
+    width: 100%; 
+    padding: 10px; 
+}
+
+
+/* 
+input{
+    font: inherit;
+    display: inherit;
+    width: inherit;
+    box-sizing: inherit;
+}
+textarea{
+    font: inherit;
+    display: inherit;
+    width: inherit;
+    box-sizing: inherit;
+    margin-block: 10px;
+}
+button{
+    font: inherit;
+    display: inherit;
+    width: inherit;
+    box-sizing: inherit;
+}
+label{
+    font: inherit;
+    display: inherit;
+    width: inherit;
+    box-sizing: inherit;
+    margin-block: 10px;
+}
+ */
